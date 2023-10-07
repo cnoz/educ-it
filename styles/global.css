@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+    /* Explicacion:
+    REFERENCE CONFIG:
+        width: 500px;
+        border: 2px solid #333;
+        padding: 30px;
+
+    CONTENT-BOX:
+        content-width: width (500px)
+        final-width: width + padding + border (564px)
+    BORDER-BOX:
+        final-width: width (500px)
+        content-width: width - padding - border (436px)  
+    */
+    scroll-behavior: smooth;
+    font-family: var(--font);
+}
+/* Fuente de Fantasia */
+@font-face {
+    src: url('../assets/font/deathstar.otf');
+    /* Formatos
+        eot (ethernet open type)
+        ttf (true type font)
+        otf (open type font)
+        woff (web open font file)
+        svg (scalable vector graphics)
+    */
+    font-family: 'Star Wars';
+}
+
+/* Margenes */
+body, 
+h1,
+h2,
+h3,
+header p,
+.item,
+#header{
+    margin: 0;
+}
+/* Bordes */
+input,
+textarea,
+select{
+    outline: 0;
+}
+iframe{
+    border: 0;
+}
+/* Rellenos */
+.menu{
+    padding: 0;
+}

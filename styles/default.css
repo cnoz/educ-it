@@ -1,0 +1,20 @@
+/* Enlaces Externos */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Raleway');
+/* Estilos Generales */
+@import url('variables.css');
+@import url('global.css');
+@import url('layout.css');
+@import url('grid-system.css');
+@import url('icons.css');
+/* Navegacion */
+@import url('navigation.css');
+/* Cabecera */
+@import url('header.css');
+/* Contenido Principal */
+@import url('gallery.css');
+@import url('transform.css');
+@import url('animations.css');
+@import url('main.css');
+/* Pie de Pagina */
+@import url('footer.css');
+@import url('contact.css');

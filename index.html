@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maquetador Avanzado</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <!-- Cabecera Principal -->
+    <header id="header" class="header">
+        <video class="cover" autoplay muted loop>
+            <source src="assets/media/wet-sand.webm">
+            <source src="assets/media/wet-sand.mp4">
+            <p>
+                Lo sentimos, pero tu navegador NO es compatible con este elemento. Podes decargar el contenido desde el siguiente 
+                <a href="assets/media/wet-sand.mp4">Link</a>
+            </p>
+        </video>
+        <h1>Maquetador Web</h1>
+        <p>HTML | CSS | JS | SASS</p>
+    </header>
+    <!-- Navegacion -->
+    <nav id="nav">
+        <a href="#">CSS</a>
+        <button class="btn menu-open"></button>
+        <ul class="menu">
+            <li><a href="">Link 1</a></li>
+            <li><a href="">Link 2</a></li>
+            <li><a href="">Link 3</a></li>
+            <li><a href="">Link 4</a></li>
+        </ul>
+    </nav>
+    <!-- Contenido Principal -->
+    <main>
+        <article>
+            <header class="header">
+                <h2>Galerias</h2>
+            </header>
+            <p>
+                En este apartado se visualizan algunos trabajos realizados, entre ellos dibujos de diferentes personajes o series populares.
+            </p>
+            <section>
+                <header>
+                    <h3>JoJo's Bizarre Adventure</h3>
+                </header>
+                <div class="gallery grid medium">
+                    <img class="item" src="assets/img/jjba-starplatinum-01.jpg" alt="Star Platinum">
+                    <img class="item" src="assets/img/jjba-starplatinum-02.jpg" alt="Star Platinum">
+                    <img class="item" src="assets/img/jjba-starplatinum-03.jpg" alt="Star Platinum">
+                    <img class="item" src="assets/img/jjba-starplatinum-04.jpg" alt="Star Platinum">
+                    <img class="item" src="assets/img/jjba-theworld-01.jpg" alt="The World">
+                    <img class="item" src="assets/img/jjba-theworld-02.jpg" alt="The World">
+                    <img class="item" src="assets/img/jjba-theworld-03.jpg" alt="The World">
+                    <img class="item" src="assets/img/jjba-theworld-04.jpg" alt="The World">
+                    <img class="item" src="assets/img/jjba-silverchariot-01.jpg" alt="Silver Chariot">
+                    <img class="item" src="assets/img/jjba-silverchariot-02.jpg" alt="Silver Chariot">
+                    <img class="item" src="assets/img/jjba-silverchariot-03.jpg" alt="Silver Chariot">
+                    <img class="item" src="assets/img/jjba-silverchariot-04.jpg" alt="Silver Chariot">
+                    <img class="item" src="assets/img/jjba-thefool-01.jpg" alt="The Fool">
+                    <img class="item" src="assets/img/jjba-thefool-02.jpg" alt="The Fool">
+                    <img class="item" src="assets/img/jjba-thefool-03.jpg" alt="The Fool">
+                    <img class="item" src="assets/img/jjba-thefool-04.jpg" alt="The Fool">
+                </div>
+            </section>
+            <section>
+                <header>
+                    <h3>Wallpapers Ubuntu Linux</h3>
+                </header>
+                <div class="slider">
+                    <ul>
+                        <li class="item active bg-bionic-beaver"></li>
+                        <li class="item bg-cosmic-cuttlefish"></li>
+                        <li class="item bg-disco-dingo"></li>
+                        <li class="item bg-focal-fossa"></li>
+                        <li class="item bg-groovy-gorilla"></li>
+                        <li class="item bg-hisurte-hippo"></li>
+                        <li class="item bg-impish-Indri"></li>
+                    </ul>
+                    <button class="icon-prev">&lt;</button>
+                    <button class="icon-next">&gt;</button>
+                    <div class="controls">
+                        <button class="active"></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                        <button></button>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <header>
+                    <h3>Lenguajes FrontEnd</h3>
+                </header>    
+                <div class="gallery flex small">
+                    <article class="item">
+                        <h4 class="header">HTML</h4>
+                        <p>
+                            <strong>HyperText Markup Language</strong> o como indica su traduccion, <strong>lenguaje de marcado de hypertexto</strong>, utiliza etiquetas y atributos para definir la estructura de la pagina. Es interpretado por el navegador y sus etiquetas se clasifican como elementos de bloque y elementos de linea, es necesario ya que representa la base de un sitio web.
+                        </p>
+                    </article>
+                    <article class="item">
+                        <h4 class="header">CSS</h4>
+                        <p>
+                            <strong>Cascading StyleSheets</strong> tambien conocido como <strong>Hojas de Estilo en Cascada</strong> corresponde a un lenguaje de <em>Diseño Grafico</em> que utiliza selectores y reglas para definir el aspecto de los elementos de la pagina y a diferencia del lenguaje anterior, las reglas se aplican en orden, respetando la jerarquia de los selectores.
+                        </p>
+                    </article>
+                    <article class="item">
+                        <h4 class="header">JS</h4>
+                        <p>
+                            Nombrado <strong>JavaScript</strong> con el fin de ganar adeptos gracias a la popularidad de <em>JAVA</em>, pero a diferencia de este, es un lenguaje de programacion interpretado por el navegador. Nuestro codigo se lee y se ejecuta desde el FrontEnd, aunque en la actualidad tambien se puede utilizar desde el lado del BackEnd gracias a <em>NodeJS</em>
+                        </p>
+                    </article>
+                    <article class="item">
+                        <h4 class="header">Bootstrap</h4>
+                        <p>
+                            <strong>Framework de CSS</strong> desarrollado por el <em>equipo de twitter</em> que facilita la creacion de paginas web, debido a que nos brinda una hoja de estilos de mas de 10 mil lineas de codigo y un script de JS de al menos 7 mil lineas, que esta pensado para que quien utilice dicha herramienta use la menor cantidad de codigo posible.</p>
+                    </article>
+                    <article class="item">
+                        <h4 class="header">GIT</h4>
+                        <p>
+                            <strong>Sistema de control de versiones</strong> desarrollado por <em>Linus Torvalds</em> con el objetivo de registrar los cambios realizados en el kernel de Linux. Nos permite manejar un historial de cambios y deshacer modificaciones de un proyecto, asi como tambien reaplicar cambios previos de ser necesario.
+                        </p>
+                    </article>
+                </div>
+            </section>
+        </article>
+        <article>
+            <header class="header">
+                <h2>Preprocesadores</h2>
+            </header>
+            <p>
+                Son herramientas que se utilizan para agilizar la creacion de hojas de estilos, mediante el uso de algun lenguaje de programacion y caracteristicas propias del mismo como el uso de condicionales y bucles. Las mismas normalmente son compiladas, para luego crear el css correspondiente.
+            </p>
+            <section>
+                <header>
+                    <h3>SASS</h3>
+                </header>
+                <p>
+                    <strong>Syntactically Awesome Style Sheets</strong> Es un Preprocesador que utiliza <em>Ruby</em> como lenguaje compilador y, al igual que este, el codigo de nuestro archivo <em>sass</em> o <em>scss</em> debe estar correctamente organizado, ya que no se pueden utilizar elementos que no hayan sido declarados previamente.
+                </p>
+                <p>
+                    Podemos acceder a la documentacion de este preprocesador, muy popular, desde el <a href="https://sass-lang.com/" target="_blank">sitio oficial de SASS</a>, donde figuran sus caracteristicas, ejemplos, registro de cambios, etc. Cabe mencionar que entre sus caracteristicas principales se encuentran las siguientes:
+                </p>
+                <ul>
+                    <li>Variables</li>
+                    <li>Nesting</li>
+                    <li>Mixins</li>
+                    <li>Condicionales</li>
+                    <li>Bucles</li>
+                </ul>
+                <h4>Plantilla de colores</h4>
+                <ul class="l-none p-0">
+                    <li class="p-3 | text-light bg-primary">primary</li>
+                    <li class="p-3 | text-light bg-secondary">secondary</li>
+                    <li class="p-3 | bg-light">light</li>
+                    <li class="p-3 | text-light bg-grey">grey</li>
+                    <li class="p-3 | text-light bg-dark">dark</li>
+                    <li class="p-3 | text-light bg-info">info</li>
+                    <li class="p-3 | text-light bg-danger">danger</li>
+                    <li class="p-3 | bg-warning">warning</li>
+                    <li class="p-3 | bg-success">success</li>
+                    <li class="p-3 | bg-transparent">transparent</li>
+                </ul>
+                <h4>Sistem de Grillas Responsive</h4>
+                <div class="row">
+                    <div class="b-1 b-solid border-primary p-3 | col-24 col-md-12 col-lg-8 col-xxl-6">columna 1</div>
+                    <div class="b-1 b-solid border-primary p-3 | col-24 col-md-12 col-lg-8 col-xxl-6">columna 2</div>
+                    <div class="b-1 b-solid border-primary p-3 | col-24 col-md-12 col-lg-8 col-xxl-6">columna 3</div>
+                    <div class="b-1 b-solid border-primary p-3 | col-24 col-md-12 col-lg-8 col-xxl-6">columna 4</div>
+                    <div class="b-1 b-solid border-primary p-3 | col-24 col-md-12 col-lg-8 col-xxl-6">columna 5</div>
+                    <div class="b-1 b-solid border-primary p-3 | col-24 col-md-12 col-lg-8 col-xxl-6">columna 6</div>
+                    <div class="b-1 b-solid border-primary p-3 | col-24 col-md-12 col-lg-8 col-xxl-6">columna 7</div>
+                    <div class="b-1 b-solid border-primary p-3 | col-24 col-md-12 col-lg-8 col-xxl-6">columna 8</div>
+                    <div class="b-1 b-solid border-primary p-3 | col-24 col-md-12 col-lg-8 col-xxl-6">columna 9</div>
+                    <div class="b-1 b-solid border-primary p-3 | col-24 col-md-12 col-lg-8 col-xxl-6">columna 10</div>
+                    <div class="b-1 b-solid border-primary p-3 | col-24 col-md-12 col-lg-8 col-xxl-6">columna 11</div>
+                    <div class="b-1 b-solid border-primary p-3 | col-24 col-md-12 col-lg-8 col-xxl-6">columna 12</div>
+                </div>
+            </section>
+        </article>
+        <article>
+            <header class="header">
+                <h2>Efectos Visuales</h2>
+            </header>
+            <p>
+                Con el paso del tiempo, css ha incorporado muchas caracteristicas que, en otras situaciones, hubiesen requerido el uso de programas como los de paquete de Abobe <em>Photoshop, Illustrator o Flash</em> para implementarlas dentro de una pagina web. Nos referimos a la modificacion del aspecto de las etiquetas, asi como tambien el uso de animaciones.
+            </p>
+            <section>
+                <header>
+                    <h3>Transformaciones</h3>
+                </header>
+                <p>
+                    Corresponden a cambios que podemos realizar sobre las etiquetas sin afectar el flujo del documento y existen diferentes tipos, uno de estos son las <strong>transformaciones 2d</strong> que no dependen de ningun contexto, simplemente podemos escalar, desplazar, sesgar y rotar una etiqueta a partir de un punto de origen que se especifica en la misma. Cabe mencionar que dentro del atributo transform se pueden aplicar mas de un efecto simultaneamente.
+                </p>
+                <div class="transform-2d flex small">
+                    <div class="translate box">translate(dX,dY)</div>
+                    <div class="scale box">scale(uX, uY)</div>
+                    <div class="rotate box">rotate(deg)</div>
+                    <div class="skew box">skewX(degX, degY)</div>
+                </div>
+                <p>
+                    Tambien existen las <strong>transformaciones 3d</strong> para las cuales es necesario indicar un punto de fuga o <em>perspectiva</em> en uno de los elementos padre para que funcionen dichas modifcaciones, caso contrario estariamos aplicando transformaciones bidimensionales con otros nombres. Incluso a dichos efectos le podemos aplicar una transicion, es decir, que el navegador rellene los espacios intermedios entre un estado A y un estado B.
+                </p>
+                <div class="transform-3d flex small">
+                    <div class="translateZ box">translateZ(d)</div>
+                    <div class="rotateX box">rotateX(deg)</div>
+                    <div class="rotateY box">rotateY(deg)</div>
+                    <div class="perspective box">perspective</div>
+                </div>
+            </section>
+            <section>
+                <header>
+                    <h3>Animaciones</h3>
+                </header>
+                <p>
+                    Son efectos visuales que se aplican mediante una linea de tiempo y a diferencia de las transiciones, pueden ser automaticas. Aunque tambien podemos asociar un evento a la ejecucion de las mismas. para su implementacion debemos asignarles un nombre y utiliza la regla <strong>@keyframes</strong>. Al igual que las transiciones, estas tambien pueden distribuirse en funcion del tiempo gracias al atributo <em>animation-timing-function</em>
+                </p>
+                <div class="transform animation loading flex small ">
+                    <div class="a-item ease" title="ease"></div>
+                    <div class="a-item ease-in" title="ease-in"></div>
+                    <div class="a-item ease-out" title="ease-out"></div>
+                    <div class="a-item ease-in-out" title="ease-in-out"></div>
+                    <div class="a-item linear" title="linear"></div>
+                </div>
+                <p>
+                    Tambien podemos controlar la direccion de la animacion, como si de una pelicula estuviesemos hablando, gracias al atributo <em>animation-direction</em> cuyo valor predeterminado es <strong>normal</strong> e indica que la pelicula se ejecuta del <em>from{} al to{}</em>, pero tambien podemos usar <strong>reverse</strong> que como indica su nombre, permite que esta se reproduzca al reves; e incluso podemos utilizar el atributo <em>animation-iteration-count</em> el cual indica la cantidad de veces que se repetira la animacion para utilizar otros valores como <em>alternate</em>
+                </p>
+                <div class="transform animation race grid small ">
+                    <div class="a-item normal ease" title="normal"></div>
+                    <div class="a-item reverse ease-in" title="reverse"></div>
+                    <div class="a-item alternate ease-out" title="alternate"></div>
+                    <div class="a-item alternate-reverse ease-in-out" title="alternate-reverse"></div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <!-- Pie de Pagina -->
+    <footer id="footer">
+        <!-- Mapa de Contacto -->
+        <iframe class="map cover"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0701119751975!2d-58.378511025066445!3d-34.60238855742663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacc473596c3%3A0x568d6d5f7f1f535d!2sEducaci%C3%B3nIT!5e0!3m2!1ses-419!2sar!4v1688082248847!5m2!1ses-419!2sar" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <button class="btn btn-dark map-open" title="ver/ocultar mapa"></button>
+        <!-- Formulario de Contacto -->
+        <form id="contact" action="" class="col-22 col-md-18 col-lg-12 col-xl-8">
+            <h2>Dejanos tu consulta</h2>
+            <label for="contact_name">Ingrese su Nombre</label>
+            <input 
+                id="contact_name" 
+                name="name" 
+                type="text"
+                maxlength="50"
+                pattern="[A-Z a-z]{3,50}"
+                required>
+            <p class="validate">
+                Escriba entre 3 y 50 caracteres utilizando solamente letras
+            </p>
+            <label for="contact_email">Ingrese su Correo</label>
+            <input 
+                id="contact_email" 
+                name="email" 
+                type="email"
+                minlength="8"
+                required>
+            <p class="validate">
+                Escriba 8 caracteres minimo, respetando el formato "usuario@servidor"
+            </p>
+            <label for="contact_consult">Ingrese su Consulta</label>
+            <textarea 
+                id="contact_consult" 
+                name="consult" 
+                minlength="30"
+                maxlength="1500"
+                required></textarea>
+            <button>Enviar</button>
+        </form>
+        <!-- Redes Sociales -->
+        <div class="social">
+            <a class="facebook" 
+                href="https://facebook.com" 
+                title="Seguinos en Facebook"
+                target="_blank">
+            </a>
+            <a class="instagram" 
+                href="https://instagram.com" 
+                title="Seguinos en Instagram"
+                target="_blank">
+            </a>
+            <a class="telegram" 
+                href="https://telegram.org" 
+                title="Mensajeanos por Telegram"
+                target="_blank">
+            </a>
+            <a class="whatsapp" 
+                href="https://api.whatsapp.com/send?phone=110303456&text=Buenos%20dias,%20mi%20consulta%20es..." 
+                title="Mensajeanos por Whatsapp"
+                target="_blank">
+            </a>
+        </div>
+        <!-- Derechos de Autor -->
+        <p>&copy;2023 Todos los derechos reservados</p>
+    </footer>
+    <!-- Script JS -->
+    <script src="scripts/index.js"></script>
+    <!-- 
+        EMMET
+
+        padre>hijo
+        ul>li    
+        <ul>
+            <li></li>
+        </ul>
+
+        elemento+hermano
+        h1+p
+        <h1></h1>
+        <p></p>
+
+        elemento[atributos]
+        a[target="_blank"]
+        <a href="" target="_blank"></a>
+
+        elemento{contenido}
+        p{texto}
+        <p>texto</p>
+
+        expresion matematica
+        (ul>li*3{link})+(div>p*2)
+        <ul>
+            <li>link</li>
+            <li>link</li>
+            <li>link</li>
+        </ul>
+        <div>
+            <p></p>
+            <p></p>
+        </div>
+    -->
+</body>
+</html>

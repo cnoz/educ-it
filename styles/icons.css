@@ -1,0 +1,264 @@
+/* Redes sociales */
+.cr {
+  --icon:url("../assets/icon/cr.svg");
+}
+
+.facebook {
+  --icon:url("../assets/icon/facebook.svg");
+}
+
+.github {
+  --icon:url("../assets/icon/github.svg");
+}
+
+.instagram {
+  --icon:url("../assets/icon/instagram.svg");
+}
+
+.linkedin {
+  --icon:url("../assets/icon/linkedin.svg");
+}
+
+.twitter {
+  --icon:url("../assets/icon/twitter.svg");
+}
+
+.telegram {
+  --icon:url("../assets/icon/telegram.svg");
+}
+
+.whatsapp {
+  --icon:url("../assets/icon/whatsapp.svg");
+}
+
+.youtube {
+  --icon:url("../assets/icon/youtube.svg");
+}
+
+/* Imagenes de Fondo Ubuntu */
+.bg-artful-aardvark {
+  --img:url("../assets/bg/ubuntu-artful-aardvark.jpg");
+}
+
+.bg-bionic-beaver {
+  --img:url("../assets/bg/ubuntu-bionic-beaver.jpg");
+}
+
+.bg-cosmic-cuttlefish {
+  --img:url("../assets/bg/ubuntu-cosmic-cuttlefish.jpg");
+}
+
+.bg-disco-dingo {
+  --img:url("../assets/bg/ubuntu-disco-dingo.jpg");
+}
+
+.bg-eoan-ermine {
+  --img:url("../assets/bg/ubuntu-eoan-ermine.jpg");
+}
+
+.bg-focal-fossa {
+  --img:url("../assets/bg/ubuntu-focal-fossa.jpg");
+}
+
+.bg-groovy-gorilla {
+  --img:url("../assets/bg/ubuntu-groovy-gorilla.jpg");
+}
+
+.bg-hisurte-hippo {
+  --img:url("../assets/bg/ubuntu-hisurte-hippo.jpg");
+}
+
+.bg-impish-Indri {
+  --img:url("../assets/bg/ubuntu-impish-Indri.jpg");
+}
+
+.bg-jammy-jellyfish {
+  --img:url("../assets/bg/ubuntu-jammy-jellyfish.jpg");
+}
+
+/* Imagenes de Fondo Mac OS X*/
+.bg-big-sur-dark {
+  --img:url("../assets/bg/osx-big-sur-dark.jpg");
+}
+
+.bg-big-sur-light {
+  --img:url("../assets/bg/osx-big-sur-light.jpg");
+}
+
+.bg-big-sur-night {
+  --img:url("../assets/bg/osx-big-sur-night.jpg");
+}
+
+.bg-big-sur {
+  --img:url("../assets/bg/osx-big-sur.jpg");
+}
+
+.bg-catalina-night {
+  --img:url("../assets/bg/osx-catalina-night.jpg");
+}
+
+.bg-catalina {
+  --img:url("../assets/bg/osx-catalina.jpg");
+}
+
+.bg-el-capitan {
+  --img:url("../assets/bg/osx-el-capitan.jpg");
+}
+
+.bg-high-sierra {
+  --img:url("../assets/bg/osx-high-sierra.jpg");
+}
+
+.bg-leopard {
+  --img:url("../assets/bg/osx-leopard.jpg");
+}
+
+.bg-lion {
+  --img:url("../assets/bg/osx-lion.jpg");
+}
+
+.bg-mavericks {
+  --img:url("../assets/bg/osx-mavericks.jpg");
+}
+
+.bg-mojave-night {
+  --img:url("../assets/bg/osx-mojave-night.jpg");
+}
+
+.bg-mojave {
+  --img:url("../assets/bg/osx-mojave.jpg");
+}
+
+.bg-monterrey-dark {
+  --img:url("../assets/bg/osx-monterrey-dark.jpg");
+}
+
+.bg-monterrey-light {
+  --img:url("../assets/bg/osx-monterrey-light.jpg");
+}
+
+.bg-mountain-lion {
+  --img:url("../assets/bg/osx-mountain-lion.jpg");
+}
+
+.bg-sierra {
+  --img:url("../assets/bg/osx-sierra.jpg");
+}
+
+.bg-snow-leopard {
+  --img:url("../assets/bg/osx-snow-leopard.jpg");
+}
+
+.bg-tiger {
+  --img:url("../assets/bg/osx-tiger.jpg");
+}
+
+.bg-yosemite {
+  --img:url("../assets/bg/osx-yosemite.jpg");
+}
+
+.icon, .social a {
+  --color: #ccc;
+  --position: center;
+  --size: 2.5rem;
+  margin: 0.25rem;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  position: relative;
+  background: var(--color) var(--icon) var(--position)/var(--size) no-repeat;
+}
+.icon:hover, .social a:hover {
+  --size: 3rem;
+  transition: all 0.3s linear 0.6s;
+  transform: rotate(360deg);
+  /*  EXPLICACION: 
+      efecto que completa las etapas intermedias entre un estado A y su estado B, es necesario que exista un gatillador
+
+      Atributos: property duration timing-function delay
+  */
+}
+.icon:active, .social a:active {
+  --color: var(--light);
+  bottom: 0.5rem;
+  box-shadow: 0 0.5rem 0.5rem var(--dark);
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+.slider {
+  position: relative;
+  width: 100%;
+  min-height: min(100vh, 640px);
+}
+.slider .item {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  transition: all 1s ease-out 0s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0;
+  background: var(--light) var(--img) top center/cover no-repeat;
+  -webkit-transition: all 1s ease-out 0s;
+  -moz-transition: all 1s ease-out 0s;
+  -ms-transition: all 1s ease-out 0s;
+  -o-transition: all 1s ease-out 0s;
+}
+.slider .item.active {
+  z-index: 0;
+  opacity: 1;
+}
+.slider button[class*=icon] {
+  background-color: transparent;
+  border: 0;
+  padding: 1rem;
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  width: 20%;
+  height: 100%;
+  z-index: 1;
+  font-size: 5vw;
+  color: var(--light);
+  opacity: 0.3;
+}
+.slider button[class*=icon].icon-prev {
+  left: 0;
+}
+.slider button[class*=icon].icon-next {
+  right: 0;
+}
+.slider button[class*=icon]:hover {
+  opacity: 0.7;
+}
+.slider .controls {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.slider .controls button {
+  border-radius: 1rem;
+  border: 0;
+  padding: 0.5rem;
+  transition: all 0.5s ease-in 0s;
+  border-radius: 1rem;
+  opacity: 0.5;
+}
+.slider .controls button.active {
+  padding: 0.5rem 1.5rem;
+}
+.slider .controls button:hover {
+  opacity: 0.8;
+}

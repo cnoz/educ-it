@@ -1,0 +1,87 @@
+#nav{
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    /*  STICKY: 
+        El elemento permanece dentro del Flow, ocupando su lugar dentro de la pagina, hasta que cumple la condicion de alguno de los atributos complementarios a position (TOP, RIGHT, BOTTOM, LEFT). El elemento permanece anclado a la direccion indicada mientras se visualice su contenedor.
+    */
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap:wrap-reverse ;
+    padding: 1rem;
+    background-image: linear-gradient(
+        var(--first),
+        var(--second)
+    );
+}
+nav a{
+    color: var(--light);
+    text-decoration: none;
+}
+.menu{
+    list-style: none;
+    width: 100%;
+    max-height: 0;
+    margin: 0;
+    line-height: 1.5;
+    overflow: hidden;
+}
+.menu.active{
+    max-height: 100vh;
+}
+/* Iconos */
+[class*="menu-"]::before{ /* si dentro del atributo existe dicho valor */
+    filter: sepia(80%); /* filtro de color */
+}
+.menu-open::before{
+    content: '⭕';
+}
+.menu-close::before{
+    content: '❌';
+}
+/* Botones */
+.btn{
+    --color: var(--light);
+    --bg: var(--first);
+    border-radius: .25rem;
+    padding: .5rem;
+    border: .1rem solid var(--color);
+    color: var(--color);
+    background-color: transparent;
+}
+.btn:hover{
+    color: var(--bg);
+    background-color: var(--color);
+}
+.btn-success{
+    --color: var(--success);
+}
+.btn-danger{
+    --color: var(--danger);
+}
+.btn-dark{
+    --color: var(--dark);
+}
+/* Pantallas Medianas */
+@media screen and (min-width: 768px){
+    #nav .btn{
+        display: none;
+    }
+    .menu{
+        display: flex;
+        width: auto;
+        max-height: 100vh;
+        gap: .5rem;
+    }
+}
+/* Pantallas Extra Grandes */
+@media screen and (min-width: 1200px){
+    #nav{
+        padding: 1rem calc(50vw - 570px);
+    }
+    .menu{
+        overflow: visible;
+    }
+}

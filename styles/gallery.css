@@ -1,0 +1,84 @@
+.gallery{
+    display: var(--display);
+    padding: .5rem;
+    gap: .5rem;
+}
+.item{
+    width: 100%;
+    border-radius: .5rem;
+    border: .5rem solid var(--grey);
+    padding: 1rem;
+}
+.gallery.flex .item{
+    flex: 1 1 var(--size);
+    /* Explicacion:
+        GROW: capacidad de expansion en flexbox;
+        SHRINK: capacidad de reduccion en flexbox;
+        BASIS: Tamaño base dentro de flexbox;
+    */
+}
+.gallery.grid{
+    grid-template-columns: repeat(
+        auto-fit, 
+        minmax(min(var(--size), 100%), 1fr)
+    );
+    /* Explicacion
+        REPEAT( Cantidad, Tamaño): Repite una valor x cantidad de veces
+        - auto-fill: rellena el espacio con celdas manteniendo su tamaño
+        - auto-fit: estira las celdas hasta cubrir el tamaño del contenedor
+        MINMAX(a,b): determina el valor mas bajo y alto para la celda
+        - %: medida calculada en base al ancho del contenedor
+        - px: representacion de puntos en pantalla
+        - fr: en base al espacio disponible del contenedor
+    */
+}
+/* Estilo Ladrillo */
+.masonry > :nth-child(even){
+    grid-column: span 2;
+}
+.masonry > :nth-child(odd){
+    grid-row: span 2;
+}
+.masonry .item{
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Pseudoclases: Instancia o caracteristica de un elemento */
+.item:first-child .header{ /* primer hijo */
+    background-image: linear-gradient(
+        var(--warning),
+        var(--danger)
+    );
+}
+.item:last-child .header{ /* ultimo hijo */
+    background-image: linear-gradient(
+        -30deg,
+        var(--grey),
+        var(--dark)
+    );
+}
+.item:nth-child(3) .header{ /* tercer hijo*/
+    background-image: radial-gradient(
+        circle at top right,
+        var(--warning),
+        var(--light) 20%,
+        var(--warning),
+        #ca3
+    );
+}
+.item:nth-last-child(2) .header{ /* penultimo hijo*/
+    background-image: conic-gradient(
+        var(--info),
+        var(--second),
+        var(--first),
+        #448
+    );
+}
+.item:nth-child(even) .header{ /* hijos pares */
+    background-image: linear-gradient(
+        to top right,
+        var(--info),
+        var(--first)
+    );
+}
